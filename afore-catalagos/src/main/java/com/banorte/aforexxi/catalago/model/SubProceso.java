@@ -28,17 +28,20 @@ public class SubProceso implements Serializable {
   @GeneratedValue
   @ApiModelProperty(
       notes = "The auto internal generated id by alert manager DB , not required to be entered by user into REST API ")
-  @Column(name = "id_cat_subproceso", nullable = false)
+  @Column(name = "id_cat_subproceso", nullable = false, length = 5)
   private Integer idSubProceso;
 
-  @Column(name = "clave")
+  @Column(name = "clave", length = 10)
   private String clave;
 
-  @Column(name = "nombre")
+  @Column(name = "nombre", length = 255)
   private String nombre;
 
   @ManyToOne
   @JoinColumn(name = "idProceso", nullable = false)
   private ProcesoUnificado proceso;
+  
+  @Column(name = "activo", columnDefinition = "integer default 1", length = 1)
+  private Integer activo;
 
 }

@@ -38,7 +38,7 @@ import io.swagger.annotations.ApiResponses;
  */
 @RestController
 @RequestMapping("/catServices")
-@Api(value = "Applciation Tramite Catalog")
+@Api(value = "Applciation Tipo Operacion Catalog")
 public class TipoOperacionController {
 
   /** The Constant log. */

@@ -96,13 +96,4 @@ public class SubProcesoController {
     return new ResponseEntity<>(listSubProcesos, HttpStatus.OK);
   }
 
-  /**
-   * Gets the version.
-   *
-   * @return the version
-   */
-  @GetMapping("/version")
-  public String getVersion() {
-    return "1.0";
-  }
 }

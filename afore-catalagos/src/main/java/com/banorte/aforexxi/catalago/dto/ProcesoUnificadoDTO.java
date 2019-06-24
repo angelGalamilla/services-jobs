@@ -23,5 +23,9 @@ public class ProcesoUnificadoDTO {
   @ApiModelProperty(notes = "Applciation code required to be entered by user into REST API ",
       required = true)
   private String nombre;
+  
+  @ApiModelProperty(notes = "Applciation code required to be entered by user into REST API ",
+      required = true)
+  private Integer activo;
 
 }

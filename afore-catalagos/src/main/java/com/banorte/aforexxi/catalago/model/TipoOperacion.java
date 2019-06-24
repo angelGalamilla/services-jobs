@@ -26,16 +26,19 @@ public class TipoOperacion implements Serializable {
 
   @Id
   @GeneratedValue
-  @Column(name = "id_cat_tipo_operacion", nullable = false)
+  @Column(name = "id_cat_tipo_operacion", nullable = false, length = 5)
   private Integer idOperacion;
 
-  @Column(name = "clave")
+  @Column(name = "clave", length = 10)
   private String clave;
 
-  @Column(name = "nombre")
+  @Column(name = "nombre", length = 255)
   private String nombre;
 
   @ManyToOne
   @JoinColumn(name = "idTramite", nullable = false)
   private Tramite tramite;
+  
+  @Column(name = "activo", columnDefinition = "integer default 1", length = 1)
+  private Integer activo;
 }

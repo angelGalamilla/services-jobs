@@ -28,3 +28,9 @@ INSERT INTO CAT_TRAMITE (id_cat_tramite, CLAVE, NOMBRE, id_sub_proceso) VALUES (
 INSERT INTO CAT_TRAMITE (id_cat_tramite, CLAVE, NOMBRE, id_sub_proceso) VALUES (10,'10','Ahorro Voluntario Ventanilla Bancomer',4);
 INSERT INTO CAT_TRAMITE (id_cat_tramite, CLAVE, NOMBRE, id_sub_proceso) VALUES (11,'11','Ahorro Voluntario Nómina programada Clientes estratégicos',4);
 
+INSERT INTO CAT_TIPO_OPERACION (id_cat_tipo_operacion, CLAVE, NOMBRE, id_tramite) VALUES (1,'1','Ope1', 4);
+INSERT INTO CAT_TIPO_OPERACION (id_cat_tipo_operacion, CLAVE, NOMBRE, id_tramite) VALUES (2,'2','Ope2', 4);
+INSERT INTO CAT_TIPO_OPERACION (id_cat_tipo_operacion, CLAVE, NOMBRE, id_tramite) VALUES (3,'3','Ope3', 4);
+INSERT INTO CAT_TIPO_OPERACION (id_cat_tipo_operacion, CLAVE, NOMBRE, id_tramite) VALUES (4,'4','Ope4', 4);
+INSERT INTO CAT_TIPO_OPERACION (id_cat_tipo_operacion, CLAVE, NOMBRE, id_tramite) VALUES (5,'5','Ope5', 4);
+INSERT INTO CAT_TIPO_OPERACION (id_cat_tipo_operacion, CLAVE, NOMBRE, id_tramite) VALUES (6,'6','Ope6', 4);

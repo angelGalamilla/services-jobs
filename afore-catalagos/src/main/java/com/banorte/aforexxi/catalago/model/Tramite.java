@@ -8,7 +8,6 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
-import javax.validation.constraints.Size;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -29,19 +28,20 @@ public class Tramite implements Serializable {
   @GeneratedValue
   @ApiModelProperty(
       notes = "The auto internal generated id by alert manager DB , not required to be entered by user into REST API ")
-  @Column(name = "id_cat_tramite", nullable = false)
+  @Column(name = "id_cat_tramite", nullable = false, length = 5)
   private Integer idTramite;
 
-  @Column(name = "clave")
-  @Size()
+  @Column(name = "clave", length = 10)
   private String clave;
 
-  @Column(name = "nombre")
+  @Column(name = "nombre", length = 255)
   private String nombre;
 
   @ManyToOne
   @JoinColumn(name = "idSubProceso", nullable = false)
   private SubProceso subproceso;
 
+  @Column(name = "activo", columnDefinition = "integer default 1", length = 1)
+  private Integer activo;
 }
 

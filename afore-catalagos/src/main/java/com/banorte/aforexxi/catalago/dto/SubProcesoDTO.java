@@ -28,5 +28,9 @@ public class SubProcesoDTO {
   @ApiModelProperty(notes = "Applciation code required to be entered by user into REST API ",
       required = true)
   private ProcesoUnificado proceso;
+  
+  @ApiModelProperty(notes = "Applciation code required to be entered by user into REST API ",
+      required = true)
+  private Integer activo;
 
 }
